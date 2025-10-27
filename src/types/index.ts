@@ -22,17 +22,17 @@ export interface IBuyer {
   address: string;
 }
 
-export interface GET {
+export interface IProductResponse {
   total: number;
   items: IProduct[];
 }
 
-export interface POST_response {
+export interface IOrderResponse {
   id: string;
   total: number;
 }
 
-export interface POST extends IBuyer {
+export interface IOrderRequest extends IBuyer {
   total: number;
   items: string[];
 }
